@@ -208,7 +208,7 @@ footer .frow{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
       <div class="card">
         <div class="n">01 / memory</div>
         <h3>Knowledge stops evaporating.</h3>
-        <p>Every project compiles into the organization's memory instead of disappearing when the session ends. The next person to pick it up, or the next agent, starts from what the last one learned.</p>
+        <p>What a project figures out goes into the organization's memory instead of disappearing when the session ends. The next person who picks it up, or the next agent, starts from what the last one learned.</p>
       </div>
       <div class="card">
         <div class="n">02 / teams</div>
@@ -217,8 +217,8 @@ footer .frow{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
       </div>
       <div class="card">
         <div class="n">03 / capability</div>
-        <h3>Capability is retrieved on demand.</h3>
-        <p>You describe what you're trying to do. The system assembles the smallest set of context, skills, agents, and tools that does it, then takes it apart when the work is done.</p>
+        <h3>Each task gets only what it needs.</h3>
+        <p>You describe what you're trying to do, and the system pulls together just the context, skills, agents, and tools that task needs, then puts them away when it's done. Nobody has to wire it up by hand first.</p>
       </div>
     </div>
   </div>
@@ -231,7 +231,7 @@ footer .frow{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
   <div class="wrap">
     <div class="intro">
       <div class="sechead"><span class="no">02</span><span class="kicker">The model · five layers, two planes</span></div>
-      <p class="lead" style="max-width:62ch">A memory graph sits at the center. Five kinds of asset live inside it as versioned nodes, from the memory itself up to the place work runs. Two planes, governance and evaluation, cut across all of them. Scroll to bring each one in.</p>
+      <p class="lead" style="max-width:62ch">Everything is built around a shared memory at the center. Five layers sit on top of it, from that memory up to where the work actually runs, and two planes apply to all of them. Scroll to take them one at a time.</p>
     </div>
 
     <div class="pin" id="modelPin" style="height:660vh">
@@ -256,44 +256,44 @@ footer .frow{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
           <div class="ptxt on">
             <div class="tag">L0 · the core</div>
             <h3>Memory graph</h3>
-            <div class="wasis"><b>was:</b> a wall of text in one file &nbsp;→&nbsp; <i>is:</i> a queryable graph</div>
-            <p>The single source. Every asset is a node, every relationship an edge, with provenance and freshness recorded on each one. That is what turns five separate tools into one system. They can finally see each other, and the system can see its own history.</p>
+            <div class="wasis">the shared store everything else reads from and writes to</div>
+            <p>It holds every part of the system (the context, the skills, the agents, the tools) and the links between them, along with where each piece came from and how current it is. Everything above this layer is just a way of reading, changing, or adding to it. Because it is one connected store instead of scattered files, the system can see itself: what depends on what, and what has gone out of date.</p>
           </div>
           <div class="ptxt">
             <div class="tag">L1 · the nodes</div>
             <h3>Asset plane</h3>
-            <div class="wasis"><b>was:</b> static configs &nbsp;→&nbsp; <i>is:</i> versioned nodes</div>
-            <p>Context, skills, agents, playbooks, and tools. Each becomes a versioned node instead of a config you write once. Five different kinds of memory in the same shape: what's true, how to do things, who does them, how the work runs, and what's permitted.</p>
+            <div class="wasis">the things the system is made of, each one tracked like a file in version control</div>
+            <p>Five kinds of thing live here: context (what's true about your work), skills (how to do a task), agents (who does it), playbooks (how a job runs from start to finish), and tools (what those agents are allowed to touch). In most setups these are loose config you write once and forget. Here each one is a tracked, named item you can update, roll back, and reuse, so the rest of the system has solid pieces to work with.</p>
           </div>
           <div class="ptxt">
             <div class="tag">L2 · identity</div>
             <h3>Registry &amp; identity</h3>
-            <div class="wasis"><b>was:</b> a skill someone copied &nbsp;→&nbsp; <i>is:</i> a skill you can verify</div>
-            <p>Every node gets a name, an immutable version, an owner, and a signature. That is the difference between a skill someone pasted from somewhere and a skill with a version, an owner, and a record you can check before you trust it.</p>
+            <div class="wasis">the labels that say what each thing is, who made it, and whether to trust it</div>
+            <p>Every asset gets a name, a version, an owner, and a signature. That is the difference between a skill someone pasted in from somewhere and a skill you can actually check before you rely on it. It is how the system, and the people in it, tell a current, trusted asset from an old or unknown one.</p>
           </div>
           <div class="ptxt">
             <div class="tag">L3 · the mediating agents</div>
             <h3>Control plane</h3>
-            <div class="wasis"><b>was:</b> you, dispatching by hand &nbsp;→&nbsp; <i>is:</i> agents that run the system</div>
-            <p>These agents do what people used to do by hand: find the right asset for a stated intent, form the team, mount tools on demand, keep the graph in good repair. This is the part that lets the system run itself instead of waiting for instructions.</p>
+            <div class="wasis">the agents that do the setup and upkeep people used to do by hand</div>
+            <p>When you ask for something, these agents find the right context, skills, and tools, put together a team to do the work, and clear it away afterward. Others run quietly in the background, noticing when something has fallen out of date and proposing a fix. This is the layer that turns a pile of assets into a system that runs and looks after itself.</p>
           </div>
           <div class="ptxt">
             <div class="tag">L4 · where work runs</div>
             <h3>Execution</h3>
-            <div class="wasis"><b>was:</b> output, then forgotten &nbsp;→&nbsp; <i>is:</i> output that teaches the system</div>
-            <p>Where the work actually happens. Its job in the architecture is to report back: what got used, what failed, what diverged from the plan. That record flows into memory, and the system is a little sharper on the next run.</p>
+            <div class="wasis">where the actual work happens, and where the system learns from it</div>
+            <p>This is the part you would recognize: an agent or a person doing the task. What is different is what happens afterward. Every run reports back what it used, what worked, and what did not, and that record goes into memory. The next time similar work comes up, the system starts from what the last run learned instead of from scratch.</p>
           </div>
           <div class="ptxt">
             <div class="tag">cross-cutting plane</div>
             <h3>Governance</h3>
-            <div class="wasis"><b>was:</b> a discipline you remember &nbsp;→&nbsp; <i>is:</i> policy the system enforces</div>
-            <p>Policy written as rules the system applies on its own. Least privilege by default. Nothing enters without passing a check, and the rules travel with each asset and fail closed when something is unclear. It cuts across every layer because the market verifies who published a thing, not whether it's safe to run.</p>
+            <div class="wasis">the rules about what's allowed, enforced by the system instead of remembered by a person</div>
+            <p>Nothing joins the system without passing a check, and each asset carries its own limits: what it can touch, how sensitive it is. So the rules apply everywhere instead of living in one person's head. It sits across every layer because today's tools tell you who published something, not whether it is safe to run. This is the guardrail that makes the rest safe to automate.</p>
           </div>
           <div class="ptxt">
             <div class="tag">cross-cutting plane</div>
             <h3>Evaluation</h3>
-            <div class="wasis"><b>was:</b> "this seems better" &nbsp;→&nbsp; <i>is:</i> a number that gates the change</div>
-            <p>Every asset carries a definition of done. Whether a new version is better becomes a measurement instead of an opinion. It ships only when it beats the one it replaces. That is what makes versioning mean something across the whole stack.</p>
+            <div class="wasis">a way to measure whether a change actually made things better</div>
+            <p>Every asset carries a simple test for what 'good' means for it. When a new version of a skill or a playbook shows up, it has to beat the one it is replacing on that test before it goes live. This is what keeps the system improving on purpose instead of drifting, and it is why a version number here actually means something.</p>
           </div>
         </div>
       </div></div>
@@ -309,7 +309,7 @@ footer .frow{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
     <div class="intro">
       <div class="sechead"><span class="no">03</span><span class="kicker">Buy, assemble, build</span></div>
       <h2 class="vh" style="max-width:20ch">The market handed us the edges. The core is ours to build.</h2>
-      <p class="lead" style="max-width:64ch">Over the past year the connection points standardized and consolidated. The protocols for agent-to-tool and agent-to-agent, the auth model, the formats for skills and registries are now gathered under a single foundation. What did not standardize is the part that matters most: trust, memory, and the loop that improves the system. Scroll to see which layers you can adopt, which you wire together, and which you build.</p>
+      <p class="lead" style="max-width:64ch">Over the past year, the ways these tools connect to each other got standardized, and most of that plumbing is now settled. What didn't get settled is the part that matters most: trust, memory, and the loop that makes the system better over time. Scroll to see which layers you can use as they are, which you wire together yourself, and which you have to build.</p>
     </div>
 
     <div class="pin" id="verdictPin" style="height:820vh">
@@ -324,11 +324,11 @@ footer .frow{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
             <div class="frame">
               <span class="rail" data-k="gov"><span class="rl">governance</span></span>
               <div class="bands">
-                <div class="band" data-k="L4"><span class="bx">L4</span> execution <span class="bsub">agent runtimes</span></div>
-                <div class="band" data-k="L3"><span class="bx">L3</span> control plane <span class="bsub">orchestrate; build upkeep</span></div>
-                <div class="band" data-k="L2"><span class="bx">L2</span> registry &amp; identity <span class="bsub">tools solid; skills DIY</span></div>
-                <div class="band" data-k="L1"><span class="bx">L1</span> asset plane <span class="bsub">SKILL.md + plugins</span></div>
-                <div class="band band-core" data-k="L0"><span class="bx">L0</span> memory graph <span class="bsub">schema is yours</span></div>
+                <div class="band" data-k="L4"><span class="bx">L4</span> execution <span class="bsub">ready to use</span></div>
+                <div class="band" data-k="L3"><span class="bx">L3</span> control plane <span class="bsub">wire it together</span></div>
+                <div class="band" data-k="L2"><span class="bx">L2</span> registry &amp; identity <span class="bsub">partly ready</span></div>
+                <div class="band" data-k="L1"><span class="bx">L1</span> asset plane <span class="bsub">ready to use</span></div>
+                <div class="band band-core" data-k="L0"><span class="bx">L0</span> memory graph <span class="bsub">you build it</span></div>
               </div>
               <span class="rail" data-k="eval"><span class="rl">evaluation</span></span>
             </div>
@@ -344,42 +344,42 @@ footer .frow{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
           <div class="ptxt">
             <div class="tag">tier 01 · buy</div>
             <h3>Adopt what exists</h3>
-            <p>Execution runtimes and the asset format (SKILL.md plus plugins) are mature. Take them as they are and spend your effort elsewhere.</p>
+            <p>The place work runs and the format your skills are written in are mature and widely supported. Use them as they are and spend your effort elsewhere.</p>
           </div>
           <div class="ptxt">
             <div class="tag">tier 02 · assemble</div>
             <h3>Wire together what's emerging</h3>
-            <p>The registry and the control plane exist only in pieces. The standards are real but young, so you connect them yourself rather than buy them whole.</p>
+            <p>The registry and the control plane exist, but only in pieces. The standards are real and still young, so you connect the parts yourself rather than buy the whole thing.</p>
           </div>
           <div class="ptxt">
             <div class="tag">tier 03 · build</div>
             <h3>Own the core</h3>
-            <p>The memory graph and the governance plane have no off-the-shelf answer. This is the part you build, and the part worth building, because it is where the system's real value sits.</p>
+            <p>The memory and the governance plane have no ready-made answer. This is the part you build yourself, and the part worth building, because it's where most of the system's value sits.</p>
           </div>
           <div class="ptxt">
             <div class="tag">gap 01 · governance</div>
             <h3>Trust and safety review</h3>
-            <p>Every registry verifies who published an asset, not whether it's safe to run. The supply chain is already under attack: typosquatted skills, poisoned tool descriptions, real exfiltration in the wild. That makes admission control load-bearing.</p>
+            <p>Today's directories tell you who published something, not whether it's safe to run. People are already taking advantage of that: fake look-alike skills, tools with hidden instructions, real cases of data being stolen. So you have to check everything before you let it in.</p>
           </div>
           <div class="ptxt">
             <div class="tag">gap 02 · registry &amp; identity</div>
             <h3>Versioning and signing for skills</h3>
-            <p>Real version control exists inside one vendor's API and almost nowhere else. There's no lockfile and no signing standard. You build the discipline: pin versions, keep a changelog, gate promotion on evaluation.</p>
+            <p>Proper version control only exists inside one company's product, and almost nowhere else. There's no standard way to lock a version or to prove a skill hasn't been tampered with. So you set the habits yourself: track versions, keep a record of changes, and only promote a new one once it has been tested.</p>
           </div>
           <div class="ptxt">
             <div class="tag">gap 03 · memory graph</div>
             <h3>Memory that interoperates</h3>
-            <p>Good memory products exist, but their models don't agree: vector, temporal graph, tiered. Build against a pluggable adapter rather than a standard that doesn't exist yet, so you can swap the store without rebuilding around it.</p>
+            <p>Good memory products exist, but they all work differently and none of them agree on a common format. Build against a thin layer you control rather than committing to any one of them, so you can switch later without taking the system apart.</p>
           </div>
           <div class="ptxt">
             <div class="tag">gap 04 · control plane</div>
             <h3>A trusted directory of agents</h3>
-            <p>You can discover an agent through a published card at a known address. You cannot yet trust a curated directory of them the way you can for tools. For a small team this is a future seam, not a blocker.</p>
+            <p>You can find an individual agent if you know where to look, but there's no trusted, vetted directory of them yet, the way one is starting to exist for tools. For a small team this is something to plan for later, not a problem now.</p>
           </div>
           <div class="ptxt">
             <div class="tag">gap 05 · evaluation</div>
             <h3>Evaluation across the system</h3>
-            <p>You can grade a skill, a tool, or a memory store on its own. Grading the assembled system end to end is still open ground. For now, evaluate per asset and keep a human review at the seam.</p>
+            <p>You can test a single skill, tool, or memory store on its own. Testing the whole thing working together, end to end, is still unsolved. For now, test each piece on its own and keep a person reviewing the places where they connect.</p>
           </div>
         </div>
       </div></div>
@@ -394,7 +394,7 @@ footer .frow{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
   <div class="wrap">
     <div class="intro">
       <div class="sechead"><span class="no">04</span><span class="kicker">Building it · phase by phase</span></div>
-      <p class="lead" style="max-width:60ch">You don't build five layers and two planes to get value. You build the spine and stub the rest. Each phase works on its own and earns the next. Scroll to walk them.</p>
+      <p class="lead" style="max-width:60ch">You don't build all of this at once to get value from it. You build the core and rough in the rest. Each phase is useful on its own and sets up the next. Scroll to walk through them.</p>
     </div>
 
     <div class="pin" id="roadPin" style="height:580vh">
@@ -403,51 +403,51 @@ footer .frow{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
           <div class="figure" style="padding:22px 20px">
             <ol class="track" id="roadTrack">
               <span class="tfill" id="roadFill"></span>
-              <li><span class="pnum">00</span> lay the substrate</li>
-              <li><span class="pnum">01</span> assets as a registry</li>
+              <li><span class="pnum">00</span> set up the memory</li>
+              <li><span class="pnum">01</span> put assets under version control</li>
               <li><span class="pnum">02</span> build the control plane</li>
-              <li><span class="pnum">03</span> close the first gap</li>
+              <li><span class="pnum">03</span> add the safety gate</li>
               <li><span class="pnum">04</span> make "good" a number</li>
-              <li><span class="pnum">05</span> close the loop</li>
+              <li><span class="pnum">05</span> let it improve itself</li>
             </ol>
           </div>
         </div>
         <div class="pin-text" id="roadText">
           <div class="ptxt on">
             <div class="tag">phase 00</div>
-            <h3>Lay the substrate</h3>
-            <p>One memory store behind a thin adapter. The choice of store matters less than the seam in front of it.</p>
-            <div class="dod">done when: your assets are nodes you can query, and the store underneath can be swapped without rework.</div>
+            <h3>Set up the memory</h3>
+            <p>Pick one place to keep everything, and put a thin layer in front of it that the rest of the system talks to. Which store you pick matters less than that layer, because it's what lets you change your mind later.</p>
+            <div class="dod">done when: everything can be looked up from one place, and you could swap the storage underneath without redoing the work.</div>
           </div>
           <div class="ptxt">
             <div class="tag">phase 01</div>
-            <h3>Assets as a registry</h3>
-            <p>Skills and plugins in a versioned repository: tags for versions, owners on record, a manifest for discovery. Crude, but real, and close to how distribution already works today.</p>
-            <div class="dod">done when: any asset can be found, versioned, and traced to an owner.</div>
+            <h3>Put assets under version control</h3>
+            <p>Put your skills and plugins in one shared, version-controlled place, each with a version, an owner, and a simple index so things can be found. It's basic, but it works, and it's close to how this stuff already gets shared today.</p>
+            <div class="dod">done when: anything in the system can be found, has a version, and traces back to an owner.</div>
           </div>
           <div class="ptxt">
             <div class="tag">phase 02</div>
             <h3>Build the control plane</h3>
-            <p>An orchestrator to route work, and one scheduled maintenance agent that watches for drift and proposes what to update. This is the piece most worth building yourself. It moves the system from static to self-maintaining.</p>
-            <div class="dod">done when: a maintenance pass runs on its own and proposes real changes.</div>
+            <p>One agent that takes a request and routes it to the right people and tools, and one that runs on a schedule, notices what has fallen out of date, and suggests fixes. This is the piece most worth building yourself, because it's what turns a fixed setup into one that keeps itself current.</p>
+            <div class="dod">done when: a maintenance run happens on its own and suggests real changes.</div>
           </div>
           <div class="ptxt">
             <div class="tag">phase 03</div>
-            <h3>Close the first gap</h3>
-            <p>Before anything new joins the system, it passes a written policy and an admission checklist: scan it, read it for injection, sign off. Manual at first. It closes the gap that matters most, and you can automate it later.</p>
-            <div class="dod">done when: nothing enters the system without passing the gate.</div>
+            <h3>Add the safety gate</h3>
+            <p>Before anything new is allowed in, it goes through a short checklist: scan it, read it for hidden instructions, sign off. Do it by hand at first. It closes the most important gap, and you can automate the checklist later.</p>
+            <div class="dod">done when: nothing gets in without passing the check.</div>
           </div>
           <div class="ptxt">
             <div class="tag">phase 04</div>
             <h3>Make "good" a number</h3>
-            <p>Put evaluations on your most-used assets so a new version has to earn its place instead of being trusted on sight.</p>
-            <div class="dod">done when: a version ships only after it beats the one it replaces.</div>
+            <p>Put a simple test on the skills you use most, so a new version has to prove it's better before it replaces the old one.</p>
+            <div class="dod">done when: a new version goes live only after it beats the one it replaces.</div>
           </div>
           <div class="ptxt">
             <div class="tag">phase 05</div>
-            <h3>Close the loop</h3>
-            <p>Capture what each run learned as something the maintenance agent reads on the next one. At this point the system stops being a thing you maintain and starts being a thing that maintains itself.</p>
-            <div class="dod">done when: outcomes from one run measurably improve the next.</div>
+            <h3>Let it improve itself</h3>
+            <p>Save what each run learned in a form the maintenance agent reads before the next one. At this point you stop maintaining the system by hand, and it starts maintaining itself.</p>
+            <div class="dod">done when: what happens in one run measurably improves the next.</div>
           </div>
         </div>
       </div></div>
@@ -463,7 +463,7 @@ footer .frow{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
     <div>
       <div class="kicker">05 · the through-line</div>
       <h2 style="margin-top:18px">From a setup you configure to a system you cultivate.</h2>
-      <p class="lead">The five things a person sets up by hand become versioned nodes in a memory graph. Agents maintain them, evaluation grades them, and policy decides what's allowed. The operator's job moves up a level: from building the workspace to defining the taste and the rules that let the workspace build and improve itself. That is also the move from using these tools to designing the system other people work inside.</p>
+      <p class="lead">The five things a person used to set up by hand now live in one shared memory. Agents keep them current, tests decide when a change is actually an improvement, and policy decides what's allowed. The person's job moves up a level: from building the setup to setting the taste and the rules that let the setup build and improve itself. That is also the move from using these tools to designing the system other people work inside.</p>
     </div>
   </div>
 </section>
