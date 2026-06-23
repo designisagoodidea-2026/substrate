@@ -189,9 +189,9 @@ footer .frow{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
 <!-- HERO -->
 <section class="hero">
   <div class="wrap">
-    <div class="kicker">Substrate — a reference architecture</div>
+    <div class="kicker">Substrate · a reference architecture</div>
     <h1>An agentic operating system for design organizations.</h1>
-    <p class="lead">Most design teams don't need more tools. They need a system that remembers what they learn, improves itself as they work, and maintains its own moving parts — so the people are free to set direction and taste.</p>
+    <p class="lead">Most design teams don't need more tools. They need a system that remembers what they learn, improves as they work, and looks after its own moving parts, so the people are free to set direction and taste.</p>
     <div class="herometa">
       <span><span class="dot t"></span> buy what exists</span>
       <span><span class="dot a"></span> assemble what's emerging</span>
@@ -208,12 +208,12 @@ footer .frow{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
   <div class="wrap">
     <div class="sechead"><span class="no">01</span><span class="kicker">The shift</span></div>
     <h2 class="vh">Designers stop being the hands for the machine.</h2>
-    <p class="lead" style="max-width:60ch">Today, most of the work of using AI is upkeep — writing context files, curating prompts, wiring up tools, remembering which version is the good one. That work scales badly, and it tends to land on the people you least want spending their time on it. Substrate is built around a single shift: people set intent, taste, and policy; the system handles the upkeep.</p>
+    <p class="lead" style="max-width:60ch">Today, most of the work of using AI is upkeep: writing context files, curating prompts, wiring up tools, remembering which version is the good one. The more people involved, the worse it gets, and it lands on the people you least want spending their time on it. Substrate is built around one shift. People set intent, taste, and policy. The system handles the upkeep.</p>
     <div class="cards">
       <div class="card">
         <div class="n">01 / memory</div>
         <h3>Knowledge stops evaporating.</h3>
-        <p>Every project compiles into the organization's memory instead of disappearing when the session ends. The next person — or the next agent — starts from what the last one learned.</p>
+        <p>Every project compiles into the organization's memory instead of disappearing when the session ends. The next person to pick it up, or the next agent, starts from what the last one learned.</p>
       </div>
       <div class="card">
         <div class="n">02 / teams</div>
@@ -222,8 +222,8 @@ footer .frow{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
       </div>
       <div class="card">
         <div class="n">03 / capability</div>
-        <h3>Capability is retrieved, not memorized.</h3>
-        <p>You describe what you're trying to do. The system assembles the smallest set of context, skills, agents, and tools that does it — and takes it apart when the work is done.</p>
+        <h3>Capability is retrieved on demand.</h3>
+        <p>You describe what you're trying to do. The system assembles the smallest set of context, skills, agents, and tools that does it, then takes it apart when the work is done.</p>
       </div>
     </div>
   </div>
@@ -234,8 +234,8 @@ footer .frow{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
 <!-- MODEL -->
 <section class="sec" id="model">
   <div class="wrap">
-    <div class="sechead"><span class="no">02</span><span class="kicker">The model — seven layers, one idea</span></div>
-    <p class="lead" style="max-width:62ch;margin-bottom:50px">A memory graph sits at the center. Five kinds of asset live inside it as versioned nodes. A control plane of agents does the work that used to be done by hand. Two planes — governance and evaluation — touch every layer. Scroll to bring each one in.</p>
+    <div class="sechead"><span class="no">02</span><span class="kicker">The model · seven layers, one idea</span></div>
+    <p class="lead" style="max-width:62ch;margin-bottom:50px">A memory graph sits at the center. Five kinds of asset live inside it as versioned nodes. A control plane of agents does the work that used to be done by hand. Two planes, governance and evaluation, touch every layer. Scroll to bring each one in.</p>
 
     <div class="scrolly" id="modelScrolly">
       <div class="sticky">
@@ -260,25 +260,25 @@ footer .frow{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
           <div class="tag">L0 · the core</div>
           <h3>Memory graph</h3>
           <div class="wasis"><b>was:</b> a wall of text in one file &nbsp;→&nbsp; <i>is:</i> a queryable graph</div>
-          <p>The single source. Every asset is a node, every relationship an edge, and provenance and freshness are recorded on each one. This is what turns five separate tools into one system — because now they can see each other, and the system can see its own history.</p>
+          <p>The single source. Every asset is a node, every relationship an edge, with provenance and freshness recorded on each one. That is what turns five separate tools into one system. They can finally see each other, and the system can see its own history.</p>
         </div>
         <div class="step" data-layer="L1">
           <div class="tag">L1 · the nodes</div>
           <h3>Asset plane</h3>
           <div class="wasis"><b>was:</b> static configs &nbsp;→&nbsp; <i>is:</i> versioned nodes</div>
-          <p>Context, skills, agents, playbooks, and tools — each a versioned node instead of a config you write once. Five different kinds of memory wearing the same shape: what's true, how to do things, who does them, how the work runs, and what's permitted.</p>
+          <p>Context, skills, agents, playbooks, and tools. Each becomes a versioned node instead of a config you write once. Five different kinds of memory in the same shape: what's true, how to do things, who does them, how the work runs, and what's permitted.</p>
         </div>
         <div class="step" data-layer="L2">
           <div class="tag">L2 · identity</div>
           <h3>Registry &amp; identity</h3>
           <div class="wasis"><b>was:</b> a skill someone copied &nbsp;→&nbsp; <i>is:</i> a skill you can verify</div>
-          <p>Every node gets a name, an immutable version, an owner, and a signature. The difference between "a skill someone pasted from somewhere" and a skill with a version, an owner, and a record you can check before you trust it.</p>
+          <p>Every node gets a name, an immutable version, an owner, and a signature. That is the difference between a skill someone pasted from somewhere and a skill with a version, an owner, and a record you can check before you trust it.</p>
         </div>
         <div class="step" data-layer="L3">
           <div class="tag">L3 · the mediating agents</div>
           <h3>Control plane</h3>
           <div class="wasis"><b>was:</b> you, dispatching by hand &nbsp;→&nbsp; <i>is:</i> agents that run the system</div>
-          <p>The agents that do what people used to do by hand — find the right asset for a stated intent, form the team, mount tools on demand, and keep the graph in good repair. This is the part that makes the system run itself rather than wait for instructions.</p>
+          <p>These agents do what people used to do by hand: find the right asset for a stated intent, form the team, mount tools on demand, keep the graph in good repair. This is the part that lets the system run itself instead of waiting for instructions.</p>
         </div>
         <div class="step" data-layer="L4">
           <div class="tag">L4 · cross-cutting</div>
@@ -290,7 +290,7 @@ footer .frow{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
           <div class="tag">L5 · cross-cutting</div>
           <h3>Evaluation</h3>
           <div class="wasis"><b>was:</b> "this seems better" &nbsp;→&nbsp; <i>is:</i> a number that gates the change</div>
-          <p>Every asset carries a definition of done. "Is this version better?" becomes a measurement rather than an opinion — and a new version ships only when it beats the one it replaces. This is what makes versioning mean something.</p>
+          <p>Every asset carries a definition of done. Whether a new version is better becomes a measurement instead of an opinion. It ships only when it beats the one it replaces. That is what makes versioning mean something.</p>
         </div>
         <div class="step" data-layer="L6">
           <div class="tag">L6 · where work runs</div>
@@ -310,12 +310,12 @@ footer .frow{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
   <div class="wrap">
     <div class="sechead"><span class="no">03</span><span class="kicker">Buy, assemble, build</span></div>
     <h2 class="vh" style="max-width:20ch">The market handed us the edges. The core is ours to build.</h2>
-    <p class="lead" style="max-width:64ch;margin-bottom:42px">Over the past year the connection points standardized and consolidated — the protocols for agent-to-tool and agent-to-agent, the auth model, the formats for skills and registries, now gathered under a single foundation. What did not standardize is the part that matters most: trust, memory, and the loop that improves the system. That line is the difference between what you can buy and what you have to build.</p>
+    <p class="lead" style="max-width:64ch;margin-bottom:42px">Over the past year the connection points standardized and consolidated. The protocols for agent-to-tool and agent-to-agent, the auth model, the formats for skills and registries are now gathered under a single foundation. What did not standardize is the part that matters most: trust, memory, and the loop that improves the system. That line is the difference between what you can buy and what you have to build.</p>
 
     <div class="legend">
-      <span><span class="sw t"></span> buy — adopt today</span>
-      <span><span class="sw a"></span> assemble — wire it yourself</span>
-      <span><span class="sw c"></span> build — you own the gap</span>
+      <span><span class="sw t"></span> buy · adopt today</span>
+      <span><span class="sw a"></span> assemble · wire it yourself</span>
+      <span><span class="sw c"></span> build · you own the gap</span>
     </div>
 
     <div class="figure vstack">
@@ -330,24 +330,24 @@ footer .frow{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
         </div>
         <span class="rail rail-r v-a"><span class="rl">evaluation</span></span>
       </div>
-      <div class="frame-cap">the two coral elements — memory and governance — are where the real work lives</div>
+      <div class="frame-cap">memory and governance are the two coral elements, and where the real work lives</div>
     </div>
 
     <div class="gaps">
       <div class="gap lead-gap">
-        <div class="gn">gap 01 — the one that matters most</div>
+        <div class="gn">gap 01 · the load-bearing one</div>
         <h4>Trust and safety review</h4>
-        <p>Every registry verifies who published an asset, not whether it's safe to run. The supply chain is already being attacked — typosquatted skills, poisoned tool descriptions, real exfiltration in the wild. Admission control isn't polish. It's load-bearing.</p>
+        <p>Every registry verifies who published an asset, not whether it's safe to run. The supply chain is already under attack: typosquatted skills, poisoned tool descriptions, real exfiltration in the wild. That makes admission control load-bearing.</p>
       </div>
       <div class="gap">
         <div class="gn">gap 02</div>
         <h4>Versioning and signing for skills</h4>
-        <p>Real version control exists inside one vendor's API and almost nowhere else. No lockfile, no signing standard. You build the discipline: pin versions, keep a changelog, gate promotion on evaluation.</p>
+        <p>Real version control exists inside one vendor's API and almost nowhere else. There's no lockfile and no signing standard. You build the discipline: pin versions, keep a changelog, gate promotion on evaluation.</p>
       </div>
       <div class="gap">
         <div class="gn">gap 03</div>
         <h4>Memory that interoperates</h4>
-        <p>Good memory products exist, with incompatible models — vector, temporal graph, tiered. Build against a pluggable adapter, not a standard that doesn't exist yet, so you can swap the store without rebuilding around it.</p>
+        <p>Good memory products exist, but their models don't agree: vector, temporal graph, tiered. Build against a pluggable adapter rather than a standard that doesn't exist yet, so you can swap the store without rebuilding around it.</p>
       </div>
       <div class="gap">
         <div class="gn">gap 04</div>
@@ -368,8 +368,8 @@ footer .frow{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
 <!-- ROADMAP -->
 <section class="sec" id="roadmap">
   <div class="wrap">
-    <div class="sechead"><span class="no">04</span><span class="kicker">Building it — phase by phase</span></div>
-    <p class="lead" style="max-width:60ch;margin-bottom:50px">You don't build seven layers to get value. You build the spine and stub the rest. Each phase stands on its own and earns the next.</p>
+    <div class="sechead"><span class="no">04</span><span class="kicker">Building it · phase by phase</span></div>
+    <p class="lead" style="max-width:60ch;margin-bottom:50px">You don't build seven layers to get value. You build the spine and stub the rest. Each phase works on its own and earns the next.</p>
 
     <div class="scrolly" id="roadScrolly">
       <div class="sticky">
@@ -378,7 +378,7 @@ footer .frow{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
             <span class="tfill" id="roadFill"></span>
             <li data-phase="0"><span class="pnum">00</span> lay the substrate</li>
             <li data-phase="1"><span class="pnum">01</span> assets as a registry</li>
-            <li data-phase="2"><span class="pnum">02</span> stand up the control plane</li>
+            <li data-phase="2"><span class="pnum">02</span> build the control plane</li>
             <li data-phase="3"><span class="pnum">03</span> close the first gap</li>
             <li data-phase="4"><span class="pnum">04</span> make "good" a number</li>
             <li data-phase="5"><span class="pnum">05</span> close the loop</li>
@@ -396,19 +396,19 @@ footer .frow{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
         <div class="step phase" data-phase="1">
           <div class="pk">phase 01</div>
           <h3>Assets as a registry</h3>
-          <p>Skills and plugins in a versioned repository — tags for versions, owners on record, a manifest for discovery. Crude, but real, and close to how the ecosystem already distributes today.</p>
+          <p>Skills and plugins in a versioned repository: tags for versions, owners on record, a manifest for discovery. Crude, but real, and close to how distribution already works today.</p>
           <div class="dod">done when: any asset can be found, versioned, and traced to an owner.</div>
         </div>
         <div class="step phase" data-phase="2">
           <div class="pk">phase 02</div>
-          <h3>Stand up the control plane</h3>
-          <p>An orchestrator to route work, and one scheduled maintenance agent that watches for drift and proposes what to update. This is the highest-leverage thing you build yourself — the piece that moves the system from static to self-maintaining.</p>
+          <h3>Build the control plane</h3>
+          <p>An orchestrator to route work, and one scheduled maintenance agent that watches for drift and proposes what to update. This is the piece most worth building yourself. It moves the system from static to self-maintaining.</p>
           <div class="dod">done when: a maintenance pass runs on its own and proposes real changes.</div>
         </div>
         <div class="step phase" data-phase="3">
           <div class="pk">phase 03</div>
           <h3>Close the first gap</h3>
-          <p>A written policy and an admission checklist — scan it, read it for injection, sign off — before anything new joins the system. Manual at first. It closes the gap that matters most, and you can automate it later.</p>
+          <p>Before anything new joins the system, it passes a written policy and an admission checklist: scan it, read it for injection, sign off. Manual at first. It closes the gap that matters most, and you can automate it later.</p>
           <div class="dod">done when: nothing enters the system without passing the gate.</div>
         </div>
         <div class="step phase" data-phase="4">
@@ -433,9 +433,9 @@ footer .frow{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
 <!-- CLOSING -->
 <section class="closing shade">
   <div class="wrap">
-    <div class="kicker">05 — the through-line</div>
+    <div class="kicker">05 · the through-line</div>
     <h2 style="margin-top:18px">From a setup you configure to a system you cultivate.</h2>
-    <p class="lead">The five things a person sets up by hand become versioned nodes in a memory graph — maintained by agents, graded by evaluation, governed by policy. The operator's job moves up a level: from building the workspace to defining the taste and the rules that let the workspace build and improve itself. That is also the move from using these tools to designing the system other people work inside.</p>
+    <p class="lead">The five things a person sets up by hand become versioned nodes in a memory graph. Agents maintain them, evaluation grades them, and policy decides what's allowed. The operator's job moves up a level: from building the workspace to defining the taste and the rules that let the workspace build and improve itself. That is also the move from using these tools to designing the system other people work inside.</p>
   </div>
 </section>
 
