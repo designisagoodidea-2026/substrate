@@ -68,7 +68,7 @@ a{color:var(--ink)}
 .vh{font-size:clamp(28px,4.4vw,46px);max-width:19ch;margin-bottom:22px}
 
 /* vision cards */
-.vis{padding:40px 0 120px}
+.vis{padding:0}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-2);
   border:1px solid var(--line-2);margin-top:40px}
 .card{background:var(--paper);padding:30px 26px}
@@ -78,7 +78,8 @@ a{color:var(--ink)}
 @media(max-width:820px){.cards{grid-template-columns:1fr}}
 
 /* desired-state blueprint strip */
-.bp{margin-top:8px}
+.bp{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:60px 0}
+.screen{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:60px 0}
 .bp-title{font-family:var(--mono);font-size:13px;letter-spacing:.04em;color:var(--ink-2);margin-bottom:14px}
 .bp-list{border:1px solid var(--line-2);background:var(--paper)}
 .bp-row{display:grid;grid-template-columns:32px 1fr;gap:16px;padding:20px 22px;border-top:1px solid var(--line-2)}
@@ -247,9 +248,10 @@ footer .frow{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
           <div class="bp-ex"><span>Figma when designing</span><span>the repo when building</span><span>nothing extra</span></div>
         </div></div>
       </div>
-      <p class="bp-bridge">That shape works when one person is willing to keep it all up by hand. Substrate is the same shape made into the whole organization's system, kept current on its own. Here is what changes.</p>
     </div>
-    <div class="cards">
+    <div class="screen">
+      <p class="bp-bridge">That shape works when one person is willing to keep it all up by hand. Substrate is the same shape made into the whole organization's system, kept current on its own. Here is what changes.</p>
+      <div class="cards">
       <div class="card">
         <div class="n">01 / memory</div>
         <h3>Knowledge stops evaporating.</h3>
@@ -265,6 +267,7 @@ footer .frow{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
         <h3>Each task gets only what it needs.</h3>
         <p>You describe what you're trying to do, and the system pulls together just the context, skills, agents, and tools that task needs, then puts them away when it's done. Nobody has to wire it up by hand first.</p>
       </div>
+    </div>
     </div>
   </div>
 </section>
