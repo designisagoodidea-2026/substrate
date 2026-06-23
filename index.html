@@ -80,14 +80,16 @@ a{color:var(--ink)}
 /* desired-state blueprint strip */
 .bp{margin-top:8px}
 .bp-title{font-family:var(--mono);font-size:13px;letter-spacing:.04em;color:var(--ink-2);margin-bottom:14px}
-.bp-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line-2);border:1px solid var(--line-2)}
-.bp-cell{background:var(--paper);padding:20px 15px}
-.bp-cell .num{font-family:var(--mono);font-size:12px;color:var(--ink-3);margin-bottom:10px}
-.bp-cell h4{font-size:15.5px;font-weight:600;margin:0 0 6px;letter-spacing:-0.01em}
-.bp-cell p{font-size:13.5px;color:var(--ink-2);margin:0;line-height:1.5}
+.bp-list{border:1px solid var(--line-2);background:var(--paper)}
+.bp-row{display:grid;grid-template-columns:32px 1fr;gap:16px;padding:20px 22px;border-top:1px solid var(--line-2)}
+.bp-row:first-child{border-top:0}
+.bp-num{font-family:var(--mono);font-size:13px;color:var(--ink-3);padding-top:3px}
+.bp-row h4{font-size:17px;font-weight:600;margin:0 0 5px;letter-spacing:-0.01em}
+.bp-row p{font-size:15px;color:var(--ink-2);margin:0 0 12px;max-width:64ch}
+.bp-ex{display:flex;flex-wrap:wrap;gap:7px}
+.bp-ex span{font-family:var(--mono);font-size:12px;color:var(--ink-2);background:var(--paper-2);border:1px solid var(--line-2);border-radius:4px;padding:3px 8px;white-space:nowrap}
 .bp-bridge{margin-top:26px;font-size:19px;color:var(--ink);max-width:62ch}
-@media(max-width:820px){.bp-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:520px){.bp-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.bp-row{grid-template-columns:1fr}.bp-num{display:none}}
 
 /* pinned scrollytelling engine */
 .pin{position:relative}
@@ -218,12 +220,32 @@ footer .frow{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
     </div>
     <div class="bp">
       <div class="bp-title">A strong AI setup already has a shape, even for one person:</div>
-      <div class="bp-grid">
-        <div class="bp-cell"><div class="num">01</div><h4>A source of truth</h4><p>Your context, principles, and design system, written where the tools can read them.</p></div>
-        <div class="bp-cell"><div class="num">02</div><h4>Reusable commands</h4><p>Saved prompts for the reviews and tasks you repeat.</p></div>
-        <div class="bp-cell"><div class="num">03</div><h4>Specialist agents</h4><p>A reviewer, a builder, a checker, each focused on one job.</p></div>
-        <div class="bp-cell"><div class="num">04</div><h4>Plan, then build</h4><p>Agree the approach before any work starts.</p></div>
-        <div class="bp-cell"><div class="num">05</div><h4>Only the right tools</h4><p>Just the connections a task needs, and nothing more.</p></div>
+      <div class="bp-list">
+        <div class="bp-row"><div class="bp-num">01</div><div>
+          <h4>Start with the right workspace</h4>
+          <p>A CLAUDE.md that gives the tools a source of truth before you ask them to make anything.</p>
+          <div class="bp-ex"><span>Role</span><span>Product context</span><span>Design principles</span><span>Design-system rules</span><span>Workflow</span><span>Output format</span></div>
+        </div></div>
+        <div class="bp-row"><div class="bp-num">02</div><div>
+          <h4>Slash commands for repeatable work</h4>
+          <p>Saved prompts for the reviews and tasks you run again and again, plus richer Skills for the ones with steps or scripts.</p>
+          <div class="bp-ex"><span>/page-review</span><span>/component-review</span><span>/prd-to-ui</span><span>/flow-map</span><span>/design-system-check</span></div>
+        </div></div>
+        <div class="bp-row"><div class="bp-num">03</div><div>
+          <h4>Specialized subagents</h4>
+          <p>Each one handles a focused job and keeps the main thread clean.</p>
+          <div class="bp-ex"><span>UX Reviewer</span><span>Design System Guardian</span><span>Accessibility Reviewer</span><span>QA Tester</span></div>
+        </div></div>
+        <div class="bp-row"><div class="bp-num">04</div><div>
+          <h4>Plan before you build</h4>
+          <p>Agree the approach before any work starts, then check it after.</p>
+          <div class="bp-ex"><span>Analyze</span><span>Plan</span><span>Review</span><span>Approve</span><span>Check</span></div>
+        </div></div>
+        <div class="bp-row"><div class="bp-num">05</div><div>
+          <h4>Connect only the tools you need</h4>
+          <p>Just the connections the current task needs, and nothing more. Less context noise, better output.</p>
+          <div class="bp-ex"><span>Figma when designing</span><span>the repo when building</span><span>nothing extra</span></div>
+        </div></div>
       </div>
       <p class="bp-bridge">That shape works when one person is willing to keep it all up by hand. Substrate is the same shape made into the whole organization's system, kept current on its own. Here is what changes.</p>
     </div>
